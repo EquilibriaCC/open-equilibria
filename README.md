@@ -1,11 +1,11 @@
-# OpenMonero - a fully open sourced implementation of MyMonero backend
+# OpenEquilibria - a fully open sourced implementation of MyMonero backend for Equilibria
 
 In this example [restbed](https://github.com/Corvusoft/restbed/) is used to
 demonstrate how to provide Monero related JSON REST service. For this purpose,
  a service called Open Monero was developed.
 
 
-OpenMonero is an open source implementation of backend of
+OpenEquilibria is an open source implementation of backend of
 https://mymonero.com/. The frontend, which includes HTML, CSS, JavaScript, was adapted
 from (and originally developed by) https://mymonero.com/.
 
@@ -69,14 +69,14 @@ The Open Monero consists of four components that need to be setup for it to work
 #### Performance
 
 Open Monero is not as fast as MyMonero.
- This is because it is basic, easy to understand and
- straight forward implementation of the backend. Thus,
- it does not use any special memory buffers/caches for transactions,
- blocks, complex database structures and SQL queries. Also, no ongoing monitoring of user's
-  transactions is happening, since user's viewkey is not stored (only its hash). Transaction search threads start when
-  user logs in (viewkey and address are submitted to the search thread), and finish shorty
-  after logout. Once the search threads stop, they can't be restarted without user logging
-   in back, because viewkey is unknown.
+This is because it is basic, easy to understand and
+straight forward implementation of the backend. Thus,
+it does not use any special memory buffers/caches for transactions,
+blocks, complex database structures and SQL queries. Also, no ongoing monitoring of user's
+transactions is happening, since user's viewkey is not stored (only its hash). Transaction search threads start when
+user logs in (viewkey and address are submitted to the search thread), and finish shorty
+after logout. Once the search threads stop, they can't be restarted without user logging
+in back, because viewkey is unknown.
 
 
 ## Example compilation on Ubuntu 18.04
